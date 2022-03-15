@@ -1,31 +1,33 @@
+# pxt-graphs
 
-> Diese Seite bei [https://mkleinsb.github.io/pxt-graphs/](https://mkleinsb.github.io/pxt-graphs/) öffnen
+This library contains extensions and blocks to enable new kinds of graphing
+on the micro:bit LED matrix display.
 
-## Als Erweiterung verwenden
+## Basic usage
 
-Dieses Repository kann als **Erweiterung** in MakeCode hinzugefügt werden.
+```blocks
+// Plot the ambient light as a horizontal bar graph on row 0
+led.plotSingleBarHorisontal(input.lightLevel(), 255, 0)
 
-* öffne [https://makecode.calliope.cc/](https://makecode.calliope.cc/)
-* klicke auf **Neues Projekt**
-* klicke auf **Erweiterungen** unter dem Zahnrad-Menü
-* nach **https://github.com/mkleinsb/pxt-graphs** suchen und importieren
+// Plot the temperature as a vertical bar graph on column 4
+led.plotSingleBarVertical(input.temperature() + 5, 55, 4)
+```
 
-## Dieses Projekt bearbeiten ![Build Status Abzeichen](https://github.com/mkleinsb/pxt-graphs/workflows/MakeCode/badge.svg)
+## TODO
 
-Um dieses Repository in MakeCode zu bearbeiten.
+- [ ] Add "icon.png" image (300x200) in the root folder
+- [ ] Turn on your automated build on https://travis-ci.org
+- [ ] Use "pxt bump" to create a tagged release on GitHub
+- [ ] Get your package reviewed and approved https://makecode.microbit.org/packages/approval
 
-* öffne [https://makecode.calliope.cc/](https://makecode.calliope.cc/)
-* klicke auf **Importieren** und dann auf **Importiere URL**
-* füge **https://github.com/mkleinsb/pxt-graphs** ein und klicke auf Importieren
+Read more at https://makecode.microbit.org/packages/build-your-own
 
-## Blockvorschau
+## License
 
-Dieses Bild zeigt den Blockcode vom letzten Commit im Master an.
-Die Aktualisierung dieses Bildes kann einige Minuten dauern.
+MIT
 
-![Eine gerenderte Ansicht der Blöcke](https://github.com/mkleinsb/pxt-graphs/raw/master/.github/makecode/blocks.png)
+## Supported targets
 
-#### Metadaten (verwendet für Suche, Rendering)
-
+* for PXT/microbit
 * for PXT/calliopemini
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
