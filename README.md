@@ -1,7 +1,7 @@
 # pxt-graphs
 
 This library contains extensions and blocks to enable new kinds of graphing
-on the micro:bit LED matrix display.
+on the LED matrix display.
 
 ## Basic usage
 
