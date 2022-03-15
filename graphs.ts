@@ -8,13 +8,13 @@ namespace led {
      * Plot a value as a horisontal bar using a single row of LEDs.
      */
     //% block
-    //% blockId=led_graphs_bar_graph_horisontal
+    //% blockId=led_graphs_bar_graph_horizontal
     //% block="plot|horizontal|bar|graph|of %value|up|to %upTo|on|row %row"
     //% block.loc.de="zeichne horizontalen Balken von %value|bis %upTo|in Reihe %row"
     //% row.min=0 row.max=4 advanced=true
     //% parts="ledmatrix"
     //% icon="\uf080"
-    export function plotSingleBarHorisontal(value: number, upTo: number, row: number): void {
+    export function plotSingleBarHorizontal(value: number, upTo: number, row: number): void {
         value = Math.abs(value)
         let mappedMax = Math.round(Math.map(value, 0, upTo, 0, 4))
         for (let x = 0; x <= mappedMax; x++) {
